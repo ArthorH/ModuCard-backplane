@@ -16,6 +16,9 @@
 ![obraz](https://github.com/user-attachments/assets/e80c3448-6730-49b6-a000-d83ffe48b6da)
 ## DIN41612 connectors
 ![BackplaneDNIcloseup](https://github.com/user-attachments/assets/95b285f2-21d8-4d5c-abaf-8682746a39f3)
+
+# Backwards Compatible with AMS backplane
+AMS backplane -> https://github.com/ArthorH/AriadnaModularSystem-Backplane
 # Author
 Artem Horiunov
 # License 
