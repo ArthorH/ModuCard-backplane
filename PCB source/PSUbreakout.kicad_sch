@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "5bf4e090-bee9-4562-b30b-2c5135e8ff57")
 	(paper "A4")
 	(title_block
@@ -13,9 +13,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:NetTie_2"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -132,12 +136,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -209,7 +218,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -221,7 +230,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -252,12 +261,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -348,7 +362,58 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 119.38 82.55)
+		(end 128.27 135.89)
+		(stroke
+			(width 0.508)
+			(type default)
+			(color 255 12 42 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 14ed688b-79c0-4e18-bae5-14ddea869dc5)
+	)
+	(text "LEFT GPIO CONNECTION TO POWER LINES"
+		(exclude_from_sim no)
+		(at 132.842 45.72 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "2ea55e93-20b5-4257-ae53-c02077c1f1a2")
+	)
+	(text "CARD 1\n"
+		(exclude_from_sim no)
+		(at 123.952 139.446 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+				(italic yes)
+				(color 255 2 43 1)
+			)
+		)
+		(uuid "6a66a071-2b6b-44bb-a4a4-9dd6651a752a")
+	)
+	(text "CARD 1 (PSU)"
+		(exclude_from_sim no)
+		(at 136.652 34.036 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "7f1a8df8-5a3b-4245-83bd-885990c23a47")
 	)
 	(junction
 		(at 78.74 116.84)
@@ -1333,19 +1398,6 @@
 			(type default)
 		)
 		(uuid "fbc6b15a-cc35-4e24-ad8d-1ae31a25c5d6")
-	)
-	(rectangle
-		(start 119.38 82.55)
-		(end 128.27 135.89)
-		(stroke
-			(width 0.508)
-			(type default)
-			(color 255 12 42 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 14ed688b-79c0-4e18-bae5-14ddea869dc5)
 	)
 	(image
 		(at 171.45 104.14)
@@ -16915,46 +16967,8 @@
 			"wK/y/wHJxvdOdWiFggAAAABJRU5ErkJggg=="
 		)
 	)
-	(text "LEFT GPIO CONNECTION TO POWER LINES"
-		(exclude_from_sim no)
-		(at 132.842 45.72 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "2ea55e93-20b5-4257-ae53-c02077c1f1a2")
-	)
-	(text "CARD 1\n"
-		(exclude_from_sim no)
-		(at 123.952 139.446 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(bold yes)
-				(italic yes)
-				(color 255 2 43 1)
-			)
-		)
-		(uuid "6a66a071-2b6b-44bb-a4a4-9dd6651a752a")
-	)
-	(text "CARD 1 (PSU)"
-		(exclude_from_sim no)
-		(at 136.652 34.036 0)
-		(effects
-			(font
-				(size 7.62 7.62)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "7f1a8df8-5a3b-4245-83bd-885990c23a47")
-	)
 	(label "GPIOL7"
 		(at 92.71 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16965,7 +16979,6 @@
 	)
 	(label "GPIOL10"
 		(at 92.71 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16976,7 +16989,6 @@
 	)
 	(label "GPIOL2"
 		(at 92.71 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16987,7 +16999,6 @@
 	)
 	(label "GPIOL14"
 		(at 92.71 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16998,7 +17009,6 @@
 	)
 	(label "GPIOL15"
 		(at 92.71 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17009,7 +17019,6 @@
 	)
 	(label "GPIOL9"
 		(at 92.71 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17020,7 +17029,6 @@
 	)
 	(label "GPIOL6"
 		(at 92.71 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17031,7 +17039,6 @@
 	)
 	(label "GPIOL4"
 		(at 92.71 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17042,7 +17049,6 @@
 	)
 	(label "GPIOL11"
 		(at 92.71 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17053,7 +17059,6 @@
 	)
 	(label "GPIOL13"
 		(at 92.71 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17064,7 +17069,6 @@
 	)
 	(label "GPIOL0"
 		(at 92.71 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17075,7 +17079,6 @@
 	)
 	(label "GPIOL3"
 		(at 92.71 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17086,7 +17089,6 @@
 	)
 	(label "GPIOL8"
 		(at 92.71 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17097,7 +17099,6 @@
 	)
 	(label "GPIOL12"
 		(at 92.71 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17108,7 +17109,6 @@
 	)
 	(label "GPIOL5"
 		(at 92.71 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17119,7 +17119,6 @@
 	)
 	(label "GPIOL1"
 		(at 92.71 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17131,7 +17130,6 @@
 	(hierarchical_label "GPIOL[0..15]"
 		(shape input)
 		(at 128.27 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "031f2c14-c34c-49a9-9bda-6291c1c27cca")
 	(paper "A4")
 	(title_block
@@ -146,6 +146,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Graphic:SYM_ESD_Small"
 			(exclude_from_sim no)
@@ -217,7 +218,7 @@
 			(symbol "SYM_ESD_Small_0_0"
 				(polyline
 					(pts
-						(xy -1.27 0.381) (xy 2.159 -1.016)
+						(xy -2.667 -1.905) (xy 2.794 -1.905) (xy 0 2.54) (xy -2.667 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -229,7 +230,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.667 -1.905) (xy 2.794 -1.905) (xy 0 2.54) (xy -2.667 -1.905)
+						(xy -1.27 0.381) (xy 2.159 -1.016)
 					)
 					(stroke
 						(width 0.254)
@@ -286,11 +287,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -388,12 +394,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -484,7 +495,34 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 127 71.12)
+		(end 254 106.68)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 92c213d4-7fdd-47ce-b10c-76942426a1e0)
+	)
+	(text "ALL MOUNTING HOLES ARE\nCONNECTED TO COMMON GROUND"
+		(exclude_from_sim no)
+		(at 191.77 88.9 0)
+		(effects
+			(font
+				(face "OCR A Extended")
+				(size 5.08 5.08)
+				(thickness 2.032)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "2ca70708-2d9e-428d-b3be-e0160e2596f7")
 	)
 	(wire
 		(pts
@@ -845,32 +883,6 @@
 			(type default)
 		)
 		(uuid "ecff68b0-902b-4e64-92b2-afaacf5fce8f")
-	)
-	(rectangle
-		(start 127 71.12)
-		(end 254 106.68)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 92c213d4-7fdd-47ce-b10c-76942426a1e0)
-	)
-	(text "ALL MOUNTING HOLES ARE\nCONNECTED TO COMMON GROUND"
-		(exclude_from_sim no)
-		(at 191.77 88.9 0)
-		(effects
-			(font
-				(face "OCR A Extended")
-				(size 5.08 5.08)
-				(thickness 2.032)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "2ca70708-2d9e-428d-b3be-e0160e2596f7")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")

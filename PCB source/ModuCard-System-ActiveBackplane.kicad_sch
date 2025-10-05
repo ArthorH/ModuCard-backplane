@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8ab7bab9-e078-4eba-84b5-91e80d010216")
 	(paper "A4")
 	(title_block
@@ -13,9 +13,13 @@
 	)
 	(lib_symbols
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -83,10 +87,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -107,7 +123,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -119,22 +135,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -180,130 +184,12 @@
 					)
 				)
 			)
-		)
-		(symbol "Device:NetTie_2"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "NT"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NetTie_2"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Net tie, 2 pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "net tie short"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Net*Tie*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NetTie_2_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NetTie_2_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -422,12 +308,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -499,7 +390,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -511,7 +402,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -542,12 +433,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -638,7 +534,153 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 168.3111 118.0625)
+		(end 205.74 157.1978)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 148257e4-b842-477d-bf0a-d53f26a58a4c)
+	)
+	(rectangle
+		(start 34.29 85.09)
+		(end 45.72 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5c6675ed-cbbc-45ff-b8af-c0c1e51eae78)
+	)
+	(rectangle
+		(start 45.72 85.09)
+		(end 57.15 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 765596c5-50d4-458f-8054-9fbc8fbc87e5)
+	)
+	(rectangle
+		(start 22.86 85.09)
+		(end 34.29 140.97)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 980c88db-3ee1-4c74-bd51-c94dfe373fc4)
+	)
+	(rectangle
+		(start 22.86 36.4964)
+		(end 102.4215 58.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c3de628a-730f-4d84-bd6f-4fa2780e8849)
+	)
+	(text "OVERSEER"
+		(exclude_from_sim no)
+		(at 182.88 140.208 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "3c8586a5-e96b-4f33-94b4-aa21fac7d99f")
+	)
+	(text "PSU"
+		(exclude_from_sim no)
+		(at 27.94 47.752 90)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "64d66197-c952-4419-a971-9d6ecc675fdd")
+	)
+	(text "PSU"
+		(exclude_from_sim no)
+		(at 88.138 40.894 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "9e1c9991-33af-49a7-8a5f-7319d423f6cb")
+	)
+	(text "downstream"
+		(exclude_from_sim no)
+		(at 195.961 127.762 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c3ccdda5-6926-466b-8034-2b440ac66e19")
+	)
+	(text "PSU\nBREAKOUT"
+		(exclude_from_sim no)
+		(at 40.132 51.816 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "d4b9243d-fd54-45b1-b4e1-44d0dec71c10")
+	)
+	(text "CAN\nTERMINATOR\n"
+		(exclude_from_sim no)
+		(at 222.504 143.764 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "e316e28a-c76c-439d-a7ca-7407811be1e7")
+	)
+	(text "USB\n"
+		(exclude_from_sim no)
+		(at 193.675 124.714 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "fb0fe6d8-2939-4800-a05d-7b7b27ede92a")
 	)
 	(junction
 		(at 67.31 109.22)
@@ -905,48 +947,12 @@
 		(uuid "eb21a0dd-9c31-40f3-9282-8726f934f8d2")
 	)
 	(no_connect
-		(at 60.96 22.86)
-		(uuid "42957e50-fe09-4bf4-9bf9-aa4915e98749")
+		(at 204.47 127)
+		(uuid "3e416da4-0e45-4ff7-9141-eaa9da751ea6")
 	)
 	(no_connect
-		(at 171.45 134.62)
-		(uuid "e054cbc8-f8c3-47df-91df-484b8cc1f1d1")
-	)
-	(bus_entry
-		(at 171.45 125.73)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1248933d-cfe7-40c5-837a-5a4b909b6701")
-	)
-	(bus_entry
-		(at 204.47 130.81)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5403a4e1-aee8-463a-8463-68663eacb434")
-	)
-	(bus_entry
-		(at 171.45 121.92)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cbc8834-fc41-4693-8d44-1c97641925ad")
-	)
-	(bus_entry
-		(at 204.47 127)
-		(size -2.54 -2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb20dcf8-411a-4d55-ba2e-2fd08a625392")
+		(at 60.96 22.86)
+		(uuid "42957e50-fe09-4bf4-9bf9-aa4915e98749")
 	)
 	(bus
 		(pts
@@ -1470,7 +1476,7 @@
 	)
 	(polyline
 		(pts
-			(xy 198.12 135.89) (xy 201.93 133.985)
+			(xy 174.625 123.19) (xy 170.815 125.095)
 		)
 		(stroke
 			(width 0)
@@ -1480,7 +1486,7 @@
 	)
 	(polyline
 		(pts
-			(xy 185.293 133.604) (xy 184.1667 135.1963)
+			(xy 187.452 125.476) (xy 188.5783 123.8837)
 		)
 		(stroke
 			(width 0)
@@ -1610,23 +1616,13 @@
 	)
 	(polyline
 		(pts
-			(xy 198.12 132.08) (xy 198.755 133.35)
+			(xy 174.625 127) (xy 173.99 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3b2d5aa3-5b3e-4fb4-8e5f-7b142b63522b")
-	)
-	(bus
-		(pts
-			(xy 204.47 127) (xy 204.47 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ba3fef6-1017-46d4-90fb-2598584ad2e6")
 	)
 	(bus
 		(pts
@@ -1710,16 +1706,6 @@
 	)
 	(bus
 		(pts
-			(xy 169.1525 134.62) (xy 171.45 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44eabed5-038e-40e7-bf1b-6cb21337e890")
-	)
-	(bus
-		(pts
 			(xy 262.89 100.33) (xy 260.35 100.33)
 		)
 		(stroke
@@ -1750,7 +1736,7 @@
 	)
 	(polyline
 		(pts
-			(xy 198.755 134.62) (xy 198.12 135.89)
+			(xy 173.99 124.46) (xy 174.625 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1840,16 +1826,6 @@
 	)
 	(bus
 		(pts
-			(xy 169.1525 142.24) (xy 169.1525 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51c91538-fe36-4f22-8c3d-a009d14bdeb2")
-	)
-	(bus
-		(pts
 			(xy 66.04 110.49) (xy 66.04 160.02)
 		)
 		(stroke
@@ -1907,6 +1883,16 @@
 			(type default)
 		)
 		(uuid "5b69f0a3-632c-4d42-93c3-94f1d12651d8")
+	)
+	(bus
+		(pts
+			(xy 168.91 121.92) (xy 168.91 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb4c1ea-1cf9-4fef-b832-181a8c0afbfa")
 	)
 	(bus
 		(pts
@@ -2140,7 +2126,7 @@
 	)
 	(bus
 		(pts
-			(xy 204.47 130.81) (xy 204.47 146.05)
+			(xy 204.47 127) (xy 204.47 146.05)
 		)
 		(stroke
 			(width 0)
@@ -2160,7 +2146,7 @@
 	)
 	(polyline
 		(pts
-			(xy 184.1667 135.1963) (xy 198.755 134.62)
+			(xy 188.5783 123.8837) (xy 173.99 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2177,16 +2163,6 @@
 			(type default)
 		)
 		(uuid "7c07cd30-e17f-428e-82d7-2254510edea3")
-	)
-	(bus
-		(pts
-			(xy 170.18 142.24) (xy 169.1525 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c7e3470-b647-4c93-a22d-2b07aac72635")
 	)
 	(bus
 		(pts
@@ -2470,6 +2446,16 @@
 	)
 	(bus
 		(pts
+			(xy 162.56 121.92) (xy 168.91 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a584b71-9ab7-47c6-9f56-4fbbb21af67b")
+	)
+	(bus
+		(pts
 			(xy 168.91 109.22) (xy 137.16 109.22)
 		)
 		(stroke
@@ -2477,6 +2463,16 @@
 			(type default)
 		)
 		(uuid "9b1675ed-349b-4b84-99d9-7ced1e04c406")
+	)
+	(bus
+		(pts
+			(xy 168.91 142.24) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b58840a-fcb8-4819-9bbc-bb1c2b4b4e29")
 	)
 	(bus
 		(pts
@@ -2800,16 +2796,6 @@
 	)
 	(bus
 		(pts
-			(xy 162.56 121.92) (xy 171.45 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3d22f24-940e-427b-944b-1160e1ab5969")
-	)
-	(bus
-		(pts
 			(xy 168.91 53.34) (xy 168.91 59.69)
 		)
 		(stroke
@@ -2847,16 +2833,6 @@
 			(type default)
 		)
 		(uuid "c6b7cf4a-3e8e-484d-85f7-a1b327153194")
-	)
-	(wire
-		(pts
-			(xy 201.93 128.27) (xy 194.31 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c89d265e-dd41-47af-836a-d56d0e1ef251")
 	)
 	(bus
 		(pts
@@ -2960,7 +2936,7 @@
 	)
 	(polyline
 		(pts
-			(xy 184.15 132.08) (xy 185.293 133.604)
+			(xy 188.595 127) (xy 187.452 125.476)
 		)
 		(stroke
 			(width 0)
@@ -3010,7 +2986,7 @@
 	)
 	(polyline
 		(pts
-			(xy 201.93 133.985) (xy 198.12 132.08)
+			(xy 170.815 125.095) (xy 174.625 127)
 		)
 		(stroke
 			(width 0)
@@ -3088,16 +3064,6 @@
 		)
 		(uuid "da26c383-db9a-46d5-985b-3841b264c196")
 	)
-	(wire
-		(pts
-			(xy 194.31 124.46) (xy 201.93 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de056f97-2087-4b89-aee1-22d4791bf2f2")
-	)
 	(bus
 		(pts
 			(xy 73.66 142.24) (xy 74.93 142.24)
@@ -3158,16 +3124,6 @@
 		)
 		(uuid "e3dee31f-1306-4bb0-b681-c97080b0d965")
 	)
-	(wire
-		(pts
-			(xy 173.99 128.27) (xy 189.23 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3dfe3e2-7178-4efe-b809-5cf0076d5c8d")
-	)
 	(bus
 		(pts
 			(xy 137.16 102.87) (xy 137.16 109.22)
@@ -3227,16 +3183,6 @@
 			(type default)
 		)
 		(uuid "eb5bc902-072b-4578-a3ba-8f16619977f4")
-	)
-	(wire
-		(pts
-			(xy 173.99 124.46) (xy 189.23 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebb964be-bfed-4c1a-94db-a04440793021")
 	)
 	(bus
 		(pts
@@ -3360,7 +3306,7 @@
 	)
 	(polyline
 		(pts
-			(xy 198.755 133.35) (xy 184.15 132.08)
+			(xy 173.99 125.73) (xy 188.595 127)
 		)
 		(stroke
 			(width 0)
@@ -3420,16 +3366,6 @@
 	)
 	(bus
 		(pts
-			(xy 171.45 121.92) (xy 171.45 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fda747b0-9e98-4d5b-acd1-6a26f7ee16c9")
-	)
-	(bus
-		(pts
 			(xy 137.16 152.4) (xy 137.16 158.75)
 		)
 		(stroke
@@ -3438,176 +3374,8 @@
 		)
 		(uuid "ffb5d05c-74e9-4970-9a59-3a6264c6b172")
 	)
-	(rectangle
-		(start 168.3111 118.0625)
-		(end 205.74 157.1978)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 148257e4-b842-477d-bf0a-d53f26a58a4c)
-	)
-	(rectangle
-		(start 34.29 85.09)
-		(end 45.72 140.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 5c6675ed-cbbc-45ff-b8af-c0c1e51eae78)
-	)
-	(rectangle
-		(start 45.72 85.09)
-		(end 57.15 140.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 765596c5-50d4-458f-8054-9fbc8fbc87e5)
-	)
-	(rectangle
-		(start 22.86 85.09)
-		(end 34.29 140.97)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 980c88db-3ee1-4c74-bd51-c94dfe373fc4)
-	)
-	(rectangle
-		(start 22.86 36.4964)
-		(end 102.4215 58.42)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid c3de628a-730f-4d84-bd6f-4fa2780e8849)
-	)
-	(text "OVERSEER"
-		(exclude_from_sim no)
-		(at 182.88 140.208 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "3c8586a5-e96b-4f33-94b4-aa21fac7d99f")
-	)
-	(text "PSU"
-		(exclude_from_sim no)
-		(at 27.94 47.752 90)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "64d66197-c952-4419-a971-9d6ecc675fdd")
-	)
-	(text "PSU"
-		(exclude_from_sim no)
-		(at 88.138 40.894 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "9e1c9991-33af-49a7-8a5f-7319d423f6cb")
-	)
-	(text "downstream"
-		(exclude_from_sim no)
-		(at 179.07 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c3ccdda5-6926-466b-8034-2b440ac66e19")
-	)
-	(text "PSU\nBREAKOUT"
-		(exclude_from_sim no)
-		(at 40.132 51.816 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "d4b9243d-fd54-45b1-b4e1-44d0dec71c10")
-	)
-	(text "CAN\nTERMINATOR\n"
-		(exclude_from_sim no)
-		(at 222.504 143.764 0)
-		(effects
-			(font
-				(size 2.032 2.032)
-				(thickness 0.254)
-				(bold yes)
-				(italic yes)
-			)
-		)
-		(uuid "e316e28a-c76c-439d-a7ca-7407811be1e7")
-	)
-	(text "USB\n"
-		(exclude_from_sim no)
-		(at 178.816 132.842 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "fb0fe6d8-2939-4800-a05d-7b7b27ede92a")
-	)
-	(label "USBIN.+"
-		(at 176.53 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "174d33d3-9c1c-4a85-8acb-320fa8eb1614")
-	)
-	(label "USBIN.-"
-		(at 176.53 124.46 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "33dd5127-4084-4a4a-9f0e-61c1c5edb7b3")
-	)
 	(label "GPIOL[0..15]"
 		(at 63.5 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3616,31 +3384,8 @@
 		)
 		(uuid "394a740c-49ca-45df-ac41-f5097c013bea")
 	)
-	(label "GPIOR14"
-		(at 201.93 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "648da8aa-f47f-4352-9667-99e6250d6b7e")
-	)
-	(label "GPIOR15"
-		(at 201.93 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c0fef544-4d59-4495-94a0-df1c6e422038")
-	)
 	(label "GPIOR[0..15]"
 		(at 204.47 143.51 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4251,73 +3996,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 191.77 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "91ef859d-43aa-41d0-8cd1-0520c8fcc5cb")
-		(property "Reference" "NT1"
-			(at 187.706 125.476 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 188.976 123.698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 191.77 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 191.77 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86cc55a4-9b72-48a5-b784-3ae795e51c26")
-		)
-		(pin "2"
-			(uuid "a127c060-6e65-4136-b880-92d4397bf8e7")
-		)
-		(instances
-			(project "ModuCard-System-ActiveBackplane"
-				(path "/8ab7bab9-e078-4eba-84b5-91e80d010216"
-					(reference "NT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 27.94 133.35 0)
 		(unit 1)
@@ -4378,73 +4056,6 @@
 			(project "ModuCard-System-ActiveBackplane"
 				(path "/8ab7bab9-e078-4eba-84b5-91e80d010216"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 191.77 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "a570ae90-9407-463a-a9f4-c1964ba3eea1")
-		(property "Reference" "NT2"
-			(at 187.706 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 188.976 127.254 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 191.77 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 191.77 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a69d471-a340-4def-9751-d0380edd3de8")
-		)
-		(pin "2"
-			(uuid "b3e7f70a-895e-4d8d-a6df-54b4b02a73bb")
-		)
-		(instances
-			(project "ModuCard-System-ActiveBackplane"
-				(path "/8ab7bab9-e078-4eba-84b5-91e80d010216"
-					(reference "NT2")
 					(unit 1)
 				)
 			)
@@ -4589,6 +4200,10 @@
 	(sheet
 		(at 166.37 69.85)
 		(size 93.98 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -4617,53 +4232,53 @@
 		)
 		(pin "USB1{+ -}" passive
 			(at 231.14 85.09 270)
+			(uuid "b8bfc2a9-99eb-4863-ba3e-b333b734f6d5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b8bfc2a9-99eb-4863-ba3e-b333b734f6d5")
 		)
 		(pin "USB3{+ -}" passive
 			(at 168.91 85.09 270)
+			(uuid "c862460e-da0a-4fc1-9bb9-6f2a10c30fcc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c862460e-da0a-4fc1-9bb9-6f2a10c30fcc")
 		)
 		(pin "USB2{+ -}" passive
 			(at 199.39 85.09 270)
+			(uuid "bea83907-6155-4424-8c78-64d9f4d0a885")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bea83907-6155-4424-8c78-64d9f4d0a885")
 		)
 		(pin "USB4{+ -}" passive
 			(at 166.37 72.39 180)
+			(uuid "865fa66c-31b8-4744-bf5e-1efdcb1626bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "865fa66c-31b8-4744-bf5e-1efdcb1626bc")
 		)
 		(pin "USBIN{+ -}" passive
 			(at 260.35 72.39 0)
+			(uuid "423f7fae-60ce-4441-9874-d157812f9097")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "423f7fae-60ce-4441-9874-d157812f9097")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -4676,6 +4291,10 @@
 	(sheet
 		(at 240.03 120.65)
 		(size 25.4 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4714,6 +4333,10 @@
 	(sheet
 		(at 71.12 20.32)
 		(size 91.44 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -4742,53 +4365,53 @@
 		)
 		(pin "USB1{+ -}" passive
 			(at 135.89 35.56 270)
+			(uuid "6fe9149c-2b23-494f-8f98-cfec773a4098")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6fe9149c-2b23-494f-8f98-cfec773a4098")
 		)
 		(pin "USB3{+ -}" passive
 			(at 73.66 35.56 270)
+			(uuid "b36c3e0f-af95-413c-bdde-a818587aeae1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b36c3e0f-af95-413c-bdde-a818587aeae1")
 		)
 		(pin "USB2{+ -}" passive
 			(at 104.14 35.56 270)
+			(uuid "5531eea8-ed85-44d1-8e8f-286a9c65ea3b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5531eea8-ed85-44d1-8e8f-286a9c65ea3b")
 		)
 		(pin "USB4{+ -}" passive
 			(at 71.12 22.86 180)
+			(uuid "d320c8e8-5c83-4b08-bd48-70d6c7b38691")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d320c8e8-5c83-4b08-bd48-70d6c7b38691")
 		)
 		(pin "USBIN{+ -}" passive
 			(at 162.56 22.86 0)
+			(uuid "d687bbc4-c70d-4bef-90d4-2adfa57bb789")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d687bbc4-c70d-4bef-90d4-2adfa57bb789")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -4801,6 +4424,10 @@
 	(sheet
 		(at 209.55 138.43)
 		(size 25.4 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4830,23 +4457,23 @@
 		)
 		(pin "CAN2{+ -}" input
 			(at 209.55 149.86 180)
+			(uuid "e68f0ed9-a5ed-4fc2-b2cc-149ece418ea9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e68f0ed9-a5ed-4fc2-b2cc-149ece418ea9")
 		)
 		(pin "CAN1{+ -}" input
 			(at 209.55 152.4 180)
+			(uuid "71fc49d2-250a-49a9-8b1a-feeba22d6034")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "71fc49d2-250a-49a9-8b1a-feeba22d6034")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -4859,6 +4486,10 @@
 	(sheet
 		(at 170.18 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -4887,63 +4518,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 170.18 46.99 180)
+			(uuid "1441fb34-3fd2-4588-b2fc-2e713437805e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1441fb34-3fd2-4588-b2fc-2e713437805e")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 170.18 53.34 180)
+			(uuid "f7ded04f-5493-45b4-8c84-58b909e9e0d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f7ded04f-5493-45b4-8c84-58b909e9e0d0")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 196.85 46.99 0)
+			(uuid "5a291575-b460-43a9-8d78-f7aea6cd04f9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5a291575-b460-43a9-8d78-f7aea6cd04f9")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 196.85 50.8 0)
+			(uuid "940bcd20-c9a0-4723-854d-92ed1b90cf0d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "940bcd20-c9a0-4723-854d-92ed1b90cf0d")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 196.85 53.34 0)
+			(uuid "de718f64-432a-4744-b40e-773aa6143c95")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "de718f64-432a-4744-b40e-773aa6143c95")
 		)
 		(pin "USB{+ -}" passive
 			(at 170.18 43.18 180)
+			(uuid "ed83fb6c-1015-438e-ba9d-85119d4a9260")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ed83fb6c-1015-438e-ba9d-85119d4a9260")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -4956,6 +4587,10 @@
 	(sheet
 		(at 201.93 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -4984,63 +4619,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 201.93 46.99 180)
+			(uuid "abf3d145-f47e-42bb-b595-813d356f4b53")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "abf3d145-f47e-42bb-b595-813d356f4b53")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 201.93 53.34 180)
+			(uuid "0f14a57c-618f-4c15-8955-d58a3e7d0c8d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0f14a57c-618f-4c15-8955-d58a3e7d0c8d")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 228.6 46.99 0)
+			(uuid "7d8335e7-ea9b-4cd3-a096-38cb86aa6f3d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7d8335e7-ea9b-4cd3-a096-38cb86aa6f3d")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 228.6 50.8 0)
+			(uuid "e4f04f66-2c71-48f3-83e6-335b3aab9e16")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e4f04f66-2c71-48f3-83e6-335b3aab9e16")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 228.6 53.34 0)
+			(uuid "b72aa28c-7a9c-4359-a49e-e52b1aaa5d80")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b72aa28c-7a9c-4359-a49e-e52b1aaa5d80")
 		)
 		(pin "USB{+ -}" passive
 			(at 201.93 43.18 180)
+			(uuid "e0f7e578-2d84-4c78-9afe-9ebaa19487c2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0f7e578-2d84-4c78-9afe-9ebaa19487c2")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5053,6 +4688,10 @@
 	(sheet
 		(at 166.37 20.32)
 		(size 93.98 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5081,53 +4720,53 @@
 		)
 		(pin "USB1{+ -}" passive
 			(at 231.14 35.56 270)
+			(uuid "3f4756ee-ac8e-4fc3-a49a-a9598e1ddcc3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3f4756ee-ac8e-4fc3-a49a-a9598e1ddcc3")
 		)
 		(pin "USB3{+ -}" passive
 			(at 168.91 35.56 270)
+			(uuid "a77874c9-c4ac-4d25-9535-bdec3e416457")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a77874c9-c4ac-4d25-9535-bdec3e416457")
 		)
 		(pin "USB2{+ -}" passive
 			(at 199.39 35.56 270)
+			(uuid "49406f32-eae2-40f4-b990-d23655e5b226")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "49406f32-eae2-40f4-b990-d23655e5b226")
 		)
 		(pin "USB4{+ -}" passive
 			(at 166.37 22.86 180)
+			(uuid "6f7b50a0-b06f-42cc-8366-1b53b8fa1724")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6f7b50a0-b06f-42cc-8366-1b53b8fa1724")
 		)
 		(pin "USBIN{+ -}" passive
 			(at 260.35 22.86 0)
+			(uuid "37ceaa6e-490e-4129-a93b-1b7b37b0ea19")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "37ceaa6e-490e-4129-a93b-1b7b37b0ea19")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5140,6 +4779,10 @@
 	(sheet
 		(at 71.12 69.85)
 		(size 91.44 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5168,53 +4811,53 @@
 		)
 		(pin "USB1{+ -}" passive
 			(at 135.89 85.09 270)
+			(uuid "664a5dc7-ff00-4cd8-89db-4b8be57b1482")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "664a5dc7-ff00-4cd8-89db-4b8be57b1482")
 		)
 		(pin "USB3{+ -}" passive
 			(at 73.66 85.09 270)
+			(uuid "eb1e358e-1d86-4797-a720-4e930796e7bb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "eb1e358e-1d86-4797-a720-4e930796e7bb")
 		)
 		(pin "USB2{+ -}" passive
 			(at 104.14 85.09 270)
+			(uuid "bd37a15e-0b45-4a71-af31-3873bcf294ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd37a15e-0b45-4a71-af31-3873bcf294ec")
 		)
 		(pin "USB4{+ -}" passive
 			(at 71.12 72.39 180)
+			(uuid "9c7df05c-d355-438b-93d1-0796273fb108")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9c7df05c-d355-438b-93d1-0796273fb108")
 		)
 		(pin "USBIN{+ -}" passive
 			(at 162.56 72.39 0)
+			(uuid "f07d0a70-d85f-4ee3-a923-1a66cfc0f019")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f07d0a70-d85f-4ee3-a923-1a66cfc0f019")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5227,6 +4870,10 @@
 	(sheet
 		(at 74.93 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5255,63 +4902,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 74.93 46.99 180)
+			(uuid "738b7294-9c9b-4359-b84e-cdb41d81cbfb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "738b7294-9c9b-4359-b84e-cdb41d81cbfb")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 74.93 53.34 180)
+			(uuid "985c3264-49e3-45bb-b752-fb36352fe3a5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "985c3264-49e3-45bb-b752-fb36352fe3a5")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 101.6 46.99 0)
+			(uuid "e2b92926-9f05-4766-97bf-bd04b711ab68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e2b92926-9f05-4766-97bf-bd04b711ab68")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 101.6 50.8 0)
+			(uuid "5bb8b08c-8dab-442f-b17a-3f2da94f6332")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5bb8b08c-8dab-442f-b17a-3f2da94f6332")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 101.6 53.34 0)
+			(uuid "f8339c77-dd7d-4ff5-a1d4-fd7070974e68")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f8339c77-dd7d-4ff5-a1d4-fd7070974e68")
 		)
 		(pin "USB{+ -}" passive
 			(at 74.93 43.18 180)
+			(uuid "6bef6346-0e04-4a3e-ad1c-ccad525d7a4b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6bef6346-0e04-4a3e-ad1c-ccad525d7a4b")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5324,6 +4971,10 @@
 	(sheet
 		(at 233.68 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5352,63 +5003,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 233.68 96.52 180)
+			(uuid "19ccf079-003e-46bf-9a02-82c8a82d8fce")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "19ccf079-003e-46bf-9a02-82c8a82d8fce")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 233.68 102.87 180)
+			(uuid "96384ae7-d6e9-41ed-b704-bff5552cf338")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "96384ae7-d6e9-41ed-b704-bff5552cf338")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 260.35 96.52 0)
+			(uuid "ea68bbfe-9093-498e-9e13-0d181f00c4d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ea68bbfe-9093-498e-9e13-0d181f00c4d0")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 260.35 100.33 0)
+			(uuid "92518827-4186-43fe-ae8a-c90f69768ff7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "92518827-4186-43fe-ae8a-c90f69768ff7")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 260.35 102.87 0)
+			(uuid "64d7ac34-8086-485d-9629-5dde223337c4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "64d7ac34-8086-485d-9629-5dde223337c4")
 		)
 		(pin "USB{+ -}" passive
 			(at 233.68 92.71 180)
+			(uuid "03112fd0-125e-4c0d-9353-dbea2d590bdc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "03112fd0-125e-4c0d-9353-dbea2d590bdc")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5421,6 +5072,10 @@
 	(sheet
 		(at 74.93 138.43)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5449,63 +5104,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 74.93 146.05 180)
+			(uuid "ad4b96a5-1533-4e51-8362-71af5fec3162")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ad4b96a5-1533-4e51-8362-71af5fec3162")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 74.93 152.4 180)
+			(uuid "48c67cab-c3b6-4295-9d83-d87d5637dc93")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "48c67cab-c3b6-4295-9d83-d87d5637dc93")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 101.6 146.05 0)
+			(uuid "07b70edd-cb79-488e-bd3e-ecf2f53d9f30")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "07b70edd-cb79-488e-bd3e-ecf2f53d9f30")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 101.6 149.86 0)
+			(uuid "754f7bd8-c62c-4115-a81d-aa6c7d71a73d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "754f7bd8-c62c-4115-a81d-aa6c7d71a73d")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 101.6 152.4 0)
+			(uuid "0efc44ef-e739-439b-bd8b-1ed8f6c92926")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0efc44ef-e739-439b-bd8b-1ed8f6c92926")
 		)
 		(pin "USB{+ -}" passive
 			(at 74.93 142.24 180)
+			(uuid "72734a75-86c7-4052-839d-67ce5d6f2568")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "72734a75-86c7-4052-839d-67ce5d6f2568")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5518,6 +5173,10 @@
 	(sheet
 		(at 233.68 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5546,63 +5205,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 233.68 46.99 180)
+			(uuid "dc1cf0a7-5e20-480f-8a46-c7a86a16e630")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dc1cf0a7-5e20-480f-8a46-c7a86a16e630")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 233.68 53.34 180)
+			(uuid "3cc84d5a-fa7d-4cb1-914d-a02ced7356d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3cc84d5a-fa7d-4cb1-914d-a02ced7356d0")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 260.35 46.99 0)
+			(uuid "f40ff379-b8cd-4cf8-aadd-14456d6aff70")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f40ff379-b8cd-4cf8-aadd-14456d6aff70")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 260.35 50.8 0)
+			(uuid "a7db66e1-1c26-4e49-a022-5262f17c67b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a7db66e1-1c26-4e49-a022-5262f17c67b4")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 260.35 53.34 0)
+			(uuid "d542f137-a7ec-47e4-ab93-1ba9b46b01fa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d542f137-a7ec-47e4-ab93-1ba9b46b01fa")
 		)
 		(pin "USB{+ -}" passive
 			(at 233.68 43.18 180)
+			(uuid "09cbe9af-f3d3-4aac-ae25-57731effcb64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "09cbe9af-f3d3-4aac-ae25-57731effcb64")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5615,6 +5274,10 @@
 	(sheet
 		(at 106.68 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5643,63 +5306,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 106.68 96.52 180)
+			(uuid "124d03a0-98a2-494d-8d56-f6fe916f78d4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "124d03a0-98a2-494d-8d56-f6fe916f78d4")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 106.68 102.87 180)
+			(uuid "ee399944-60bf-445c-980d-b8a7b3fbb9ee")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ee399944-60bf-445c-980d-b8a7b3fbb9ee")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 133.35 96.52 0)
+			(uuid "b7946894-7880-4bd6-9386-fe335ef38d9c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b7946894-7880-4bd6-9386-fe335ef38d9c")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 133.35 100.33 0)
+			(uuid "573e51eb-bbdf-4f60-94f0-9ffd3e04ad34")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "573e51eb-bbdf-4f60-94f0-9ffd3e04ad34")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 133.35 102.87 0)
+			(uuid "2d902d61-d22a-4af0-98f5-101f7d14540e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2d902d61-d22a-4af0-98f5-101f7d14540e")
 		)
 		(pin "USB{+ -}" passive
 			(at 106.68 92.71 180)
+			(uuid "fcca77a1-99e9-4f5c-8a27-baacb998bafd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fcca77a1-99e9-4f5c-8a27-baacb998bafd")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5712,6 +5375,10 @@
 	(sheet
 		(at 201.93 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5740,63 +5407,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 201.93 96.52 180)
+			(uuid "838e0993-91a6-4954-95f1-d45175d2ce7e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "838e0993-91a6-4954-95f1-d45175d2ce7e")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 201.93 102.87 180)
+			(uuid "596079c9-4d9f-4418-a32f-273d6666ef0f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "596079c9-4d9f-4418-a32f-273d6666ef0f")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 228.6 96.52 0)
+			(uuid "d325b4c2-1d69-44e1-8f0d-0fd5c08312ac")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d325b4c2-1d69-44e1-8f0d-0fd5c08312ac")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 228.6 100.33 0)
+			(uuid "bc893947-7ad3-4a9c-9caf-604cbd71fa2e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bc893947-7ad3-4a9c-9caf-604cbd71fa2e")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 228.6 102.87 0)
+			(uuid "db331191-8609-4bcd-9874-7413a6ef60de")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "db331191-8609-4bcd-9874-7413a6ef60de")
 		)
 		(pin "USB{+ -}" passive
 			(at 201.93 92.71 180)
+			(uuid "41256e9c-db6d-4323-9f4e-e1f825b568d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "41256e9c-db6d-4323-9f4e-e1f825b568d6")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5809,6 +5476,10 @@
 	(sheet
 		(at 71.12 119.38)
 		(size 91.44 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5837,53 +5508,53 @@
 		)
 		(pin "USB1{+ -}" passive
 			(at 135.89 134.62 270)
+			(uuid "5fb25c6e-6b1a-4564-bce3-ae02b80f8862")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5fb25c6e-6b1a-4564-bce3-ae02b80f8862")
 		)
 		(pin "USB3{+ -}" passive
 			(at 73.66 134.62 270)
+			(uuid "d2f98106-be34-4248-8e32-e3c6a8e143fc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d2f98106-be34-4248-8e32-e3c6a8e143fc")
 		)
 		(pin "USB2{+ -}" passive
 			(at 104.14 134.62 270)
+			(uuid "7ec0afd1-b85a-47a3-a9b1-3bc23df529a6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7ec0afd1-b85a-47a3-a9b1-3bc23df529a6")
 		)
 		(pin "USB4{+ -}" passive
 			(at 71.12 121.92 180)
+			(uuid "838f7ce3-202d-40fd-8928-1f6ac1b68b5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "838f7ce3-202d-40fd-8928-1f6ac1b68b5a")
 		)
 		(pin "USBIN{+ -}" passive
 			(at 162.56 121.92 0)
+			(uuid "ca4e6804-6e18-4b94-87c5-3fc2bee165b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ca4e6804-6e18-4b94-87c5-3fc2bee165b4")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5896,6 +5567,10 @@
 	(sheet
 		(at 106.68 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -5924,63 +5599,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 106.68 46.99 180)
+			(uuid "2a017b40-62d4-4402-b605-f7a8f2fc272f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2a017b40-62d4-4402-b605-f7a8f2fc272f")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 106.68 53.34 180)
+			(uuid "c808867b-9656-40bf-9868-7ca44b1bdade")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c808867b-9656-40bf-9868-7ca44b1bdade")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 133.35 46.99 0)
+			(uuid "42a3da99-8e38-454a-8a38-113ecc26e3f0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "42a3da99-8e38-454a-8a38-113ecc26e3f0")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 133.35 50.8 0)
+			(uuid "7e6efa46-9c09-409f-922a-cf2ecb272f1f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7e6efa46-9c09-409f-922a-cf2ecb272f1f")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 133.35 53.34 0)
+			(uuid "56fd75a7-9f52-4e76-96cb-52854fcfa22e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "56fd75a7-9f52-4e76-96cb-52854fcfa22e")
 		)
 		(pin "USB{+ -}" passive
 			(at 106.68 43.18 180)
+			(uuid "28546d38-f6ba-4fcf-909b-0afb2c852dd1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "28546d38-f6ba-4fcf-909b-0afb2c852dd1")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -5993,6 +5668,10 @@
 	(sheet
 		(at 74.93 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6021,63 +5700,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 74.93 96.52 180)
+			(uuid "1fd979c7-4080-40f1-9dab-8b68823384ed")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1fd979c7-4080-40f1-9dab-8b68823384ed")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 74.93 102.87 180)
+			(uuid "25a0b3bb-1ff8-4e87-8df4-74ad06a71f1a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "25a0b3bb-1ff8-4e87-8df4-74ad06a71f1a")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 101.6 96.52 0)
+			(uuid "475c5425-64b1-4ec0-8202-1f4c7204f435")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "475c5425-64b1-4ec0-8202-1f4c7204f435")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 101.6 100.33 0)
+			(uuid "27ef9791-829c-40fa-9713-da377783bed8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "27ef9791-829c-40fa-9713-da377783bed8")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 101.6 102.87 0)
+			(uuid "299886bd-5b49-4c45-82c4-b9418a8a7827")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "299886bd-5b49-4c45-82c4-b9418a8a7827")
 		)
 		(pin "USB{+ -}" passive
 			(at 74.93 92.71 180)
+			(uuid "5adaad26-7b47-4f55-a96f-70794fa07615")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5adaad26-7b47-4f55-a96f-70794fa07615")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6090,6 +5769,10 @@
 	(sheet
 		(at 106.68 138.43)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6118,63 +5801,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 106.68 146.05 180)
+			(uuid "b4004969-e78e-430c-85cd-82c5e46db914")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b4004969-e78e-430c-85cd-82c5e46db914")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 106.68 152.4 180)
+			(uuid "fa22669c-499f-4811-9539-668f961d0e0c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fa22669c-499f-4811-9539-668f961d0e0c")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 133.35 146.05 0)
+			(uuid "504bf6c2-802c-4511-82af-82445f8fac52")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "504bf6c2-802c-4511-82af-82445f8fac52")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 133.35 149.86 0)
+			(uuid "7bd470d3-edf1-4d2b-bae8-6b4a5f3e4dd1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7bd470d3-edf1-4d2b-bae8-6b4a5f3e4dd1")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 133.35 152.4 0)
+			(uuid "e2f86ed9-c32e-46c9-a393-3a7ba9142575")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e2f86ed9-c32e-46c9-a393-3a7ba9142575")
 		)
 		(pin "USB{+ -}" passive
 			(at 106.68 142.24 180)
+			(uuid "93993663-8c38-4d11-b97f-c07071139474")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "93993663-8c38-4d11-b97f-c07071139474")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6187,6 +5870,10 @@
 	(sheet
 		(at 170.18 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6215,63 +5902,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 170.18 96.52 180)
+			(uuid "ee682d47-5f6a-4e85-9484-7c69ab18b3bb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ee682d47-5f6a-4e85-9484-7c69ab18b3bb")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 170.18 102.87 180)
+			(uuid "5b03cd52-d354-4b0d-a4d7-e625458e922b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5b03cd52-d354-4b0d-a4d7-e625458e922b")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 196.85 96.52 0)
+			(uuid "facf5be7-5b82-4b4a-ae21-f250d572155d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "facf5be7-5b82-4b4a-ae21-f250d572155d")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 196.85 100.33 0)
+			(uuid "eadd2374-2cf8-4682-8c9d-17326849c0b2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "eadd2374-2cf8-4682-8c9d-17326849c0b2")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 196.85 102.87 0)
+			(uuid "0d7d43e0-0679-46aa-b17c-1d5826fd9fa1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0d7d43e0-0679-46aa-b17c-1d5826fd9fa1")
 		)
 		(pin "USB{+ -}" passive
 			(at 170.18 92.71 180)
+			(uuid "6522443d-925e-48e8-a9de-f00c7c68b6ba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6522443d-925e-48e8-a9de-f00c7c68b6ba")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6284,6 +5971,10 @@
 	(sheet
 		(at 138.43 88.9)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6312,63 +6003,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 138.43 96.52 180)
+			(uuid "4679da91-4e83-4ea9-bf6f-a51cd0928059")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4679da91-4e83-4ea9-bf6f-a51cd0928059")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 138.43 102.87 180)
+			(uuid "f4b6b058-ba87-4442-b99a-bd26c423a469")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f4b6b058-ba87-4442-b99a-bd26c423a469")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 165.1 96.52 0)
+			(uuid "0fe87cfd-32ec-4774-9710-7e453acd40a6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0fe87cfd-32ec-4774-9710-7e453acd40a6")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 165.1 100.33 0)
+			(uuid "fc3390aa-c309-4dda-a386-74e96ccc13de")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fc3390aa-c309-4dda-a386-74e96ccc13de")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 165.1 102.87 0)
+			(uuid "db9ab84c-55c3-4821-b5fd-11784cd420e0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "db9ab84c-55c3-4821-b5fd-11784cd420e0")
 		)
 		(pin "USB{+ -}" passive
 			(at 138.43 92.71 180)
+			(uuid "8aa97ce4-278b-444a-858c-6c71fd31d532")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8aa97ce4-278b-444a-858c-6c71fd31d532")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6381,6 +6072,10 @@
 	(sheet
 		(at 138.43 39.37)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6409,63 +6104,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 138.43 46.99 180)
+			(uuid "3a9e0dc2-98b8-444e-8707-993fa332a0fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3a9e0dc2-98b8-444e-8707-993fa332a0fd")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 138.43 53.34 180)
+			(uuid "cbfd6127-4f6c-40d4-9825-8a6beb93d707")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cbfd6127-4f6c-40d4-9825-8a6beb93d707")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 165.1 46.99 0)
+			(uuid "0be97ee1-62b6-4c1b-b592-5b355a483456")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0be97ee1-62b6-4c1b-b592-5b355a483456")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 165.1 50.8 0)
+			(uuid "91e326f6-5b39-42b7-bbbd-9d2fd7b550d4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "91e326f6-5b39-42b7-bbbd-9d2fd7b550d4")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 165.1 53.34 0)
+			(uuid "7e3f0b30-35be-4a5b-ae6f-1b006c19fc35")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7e3f0b30-35be-4a5b-ae6f-1b006c19fc35")
 		)
 		(pin "USB{+ -}" passive
 			(at 138.43 43.18 180)
+			(uuid "27345fdd-b68b-4291-b8aa-b39cb320e30d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "27345fdd-b68b-4291-b8aa-b39cb320e30d")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6478,6 +6173,10 @@
 	(sheet
 		(at 170.18 138.43)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6506,63 +6205,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 170.18 146.05 180)
+			(uuid "85cf8694-7b86-4e02-a6e9-f26a563a20dd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "85cf8694-7b86-4e02-a6e9-f26a563a20dd")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 170.18 152.4 180)
+			(uuid "c91bd674-52a6-4c09-a132-94bdba986fef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c91bd674-52a6-4c09-a132-94bdba986fef")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 196.85 146.05 0)
+			(uuid "132b813c-c08a-4a0f-889e-e5817af34532")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "132b813c-c08a-4a0f-889e-e5817af34532")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 196.85 149.86 0)
+			(uuid "f0c4e690-f659-4d91-ac99-caaf3742d9bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f0c4e690-f659-4d91-ac99-caaf3742d9bc")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 196.85 152.4 0)
+			(uuid "b50ab1e0-45dd-4706-8fad-8aca596041f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b50ab1e0-45dd-4706-8fad-8aca596041f5")
 		)
 		(pin "USB{+ -}" passive
 			(at 170.18 142.24 180)
+			(uuid "9c54aa8b-e295-49ff-882e-5cc8a3cdbec6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9c54aa8b-e295-49ff-882e-5cc8a3cdbec6")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6575,6 +6274,10 @@
 	(sheet
 		(at 138.43 138.43)
 		(size 26.67 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -6603,63 +6306,63 @@
 		)
 		(pin "GPIOL[0..15]" passive
 			(at 138.43 146.05 180)
+			(uuid "c2081ff4-023d-42f4-a2f2-50c5fb33e371")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c2081ff4-023d-42f4-a2f2-50c5fb33e371")
 		)
 		(pin "GPIOC[0..15]" passive
 			(at 138.43 152.4 180)
+			(uuid "e93e41c3-1104-430f-9b91-4f46e99cb873")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e93e41c3-1104-430f-9b91-4f46e99cb873")
 		)
 		(pin "GPIOR[0..15]" passive
 			(at 165.1 146.05 0)
+			(uuid "213afc37-794b-4d57-850a-68bb8427fe73")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "213afc37-794b-4d57-850a-68bb8427fe73")
 		)
 		(pin "CAN2{+ -}" passive
 			(at 165.1 149.86 0)
+			(uuid "2e3d3949-c3a0-437e-aadf-398a9ad1ae50")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2e3d3949-c3a0-437e-aadf-398a9ad1ae50")
 		)
 		(pin "CAN1{+ -}" passive
 			(at 165.1 152.4 0)
+			(uuid "29417386-6a55-4d73-ad09-6e0237248a90")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "29417386-6a55-4d73-ad09-6e0237248a90")
 		)
 		(pin "USB{+ -}" passive
 			(at 138.43 142.24 180)
+			(uuid "2f66c954-6075-45c3-a002-351f4f36c295")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2f66c954-6075-45c3-a002-351f4f36c295")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6672,6 +6375,10 @@
 	(sheet
 		(at 31.75 39.37)
 		(size 29.21 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -6701,13 +6408,13 @@
 		)
 		(pin "GPIOL[0..15]" input
 			(at 60.96 46.99 0)
+			(uuid "2ab46849-5d8e-46e0-abc1-2ef2c06f9704")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2ab46849-5d8e-46e0-abc1-2ef2c06f9704")
 		)
 		(instances
 			(project "ModuCard-System-ActiveBackplane"
@@ -6722,4 +6429,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
